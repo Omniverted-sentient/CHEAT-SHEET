@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="./styles.css">
+
+</head>
+<header>
+    <h1>HTML CHEAT SHEET</h1>
+</header>
+
+<p id="inb"> 
+<a href="#index">Index</a>
+</p>
+
+<nav>
+    <h2 id="index">INDEX</h2>
+    <ul>
+        <li><a href="#basictags">Basic Tags</a></li>
+        <li><a href="#documentinfo">Document Information</a></li>
+        <li><a href="#textformat">Text Format</a></li>
+        <li><a href="#tabletag">Table Tags</a></li>
+        <li><a href="#Links">Link Tags</a></li>
+        <li><a href="#images">Image Tags</a></li>
+        <li><a href="#list">List Tags</a></li>
+        <li><a href="#forms">Form Tags</a></li>
+        <li><a href="#iattributes">Input Attributes</a></li>
+        <li><a href="#sattribute">Select Attributes</a></li>
+        <li><a href="#oattribute">Option Attributes</a></li>
+
+
+    </ul>
+</nav>
+<body>
+    
+    <hr>
+    <hr>
+        <div id="basictags">
+            <h2>Basic Tags</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tags</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="code">&lt;html&gt;&lt;/html&gt;</td>
+                        <td>HTML Declaration</td>
+                        <td> It is mainly used to show that
+                            the page uses HTML5</td>
+                    </tr>    
+                    <tr>
+                        <td class="code">&lt;head&gt;&lt;/head&gt;</td>
+                        <td>Head</td>
+                        <td>This tag is used to specify meta data about
+                            the webpage</td>
+                    </tr>    
+                    <tr>
+                        <td class="code">&lt;title&gt;&lt;/title&gt;</td>
+                        <td>Title</td>
+                        <td>You can see this
+                            in your browser’s title bar for every webpage open
+                            in the browser. Search engines use this tag to
+                            extract the topic of the webpage</td>
+                    </tr>    
+                    <tr>
+                        <td class="code">&lt;body&gt;&lt;/body&gt;</td>
+                        <td>Body</td>
+                        <td>Everything the user sees on a webpage is written
+                            inside this tag. It is a container for all the contents
+                            of the webpage</td>
+                    </tr>    
+                </tbody>
+            </table>
+            <pre class="code">
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;My First Website&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+        </div>
+    <hr>
+    <hr>
+        <div id="documentinfo">
+            <H2>Document Information</H2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tags</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="code">&lt;base/&gt;</td>
+                        <td>Base</td>
+                        <td>Used to specify the base URL of your site,
+                            this tag makes linking to internal links on your
+                            site cleaner.
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td class="code">&lt;meta/>&gt;</td>
+                        <td>Meta</td>
+                        <td>This is the meta data tag for the webpage.
+                            Can be useful for mentioning the page’s author,
+                            keywords, original published date etc.
+                        </td>
+                </tr> 
+                <tr>
+                        <td class="code">&lt;link/&gt;</td>
+                        <td>Link</td>
+                        <td>This is used to link to scripts external to
+                            the webpage. Typically utilized for including
+                            stylesheets.
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;style&gt;&lt;/style&gt;</td>
+                        <td>Style</td>
+                        <td>The style tag can be used as an alternative to
+                            an external style sheet, or complement it.
+                            Includes the webpage’s appearance information
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;script&gt;&lt;/script&gt;</td>
+                        <td>Script</td>
+                        <td>Used to add code snippets, typically in JavaScript,
+                            to make webpage dynamic. It can also be used to
+                            just link to an external script.</td>
+                    </tr>   
+                </tbody>
+            </table>
+            <pre class="code">
+                &lt;html&gt;
+                    &lt;head&gt;
+                        <span>&lt;meta charset="utf-8"&gt;
+                        &lt;base href="http://myfirstwebsite.com"
+                        target="_blank" /&gt;
+                        &lt;title&gt;My Beautiful Website&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="/css/master.css"&gt;
+                        &lt;script type="text/javascript"&gt;
+                        var dummy = 0;
+                        &lt;/script&gt;</span>
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+        </div>  
+    <hr>
+    <hr>
+        <div id="textformat">
+            <H2> Text Formatting </H2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tags</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="code">&lt;strong&gt; … &lt;/strong&gt;
+                        </td>
+                        <td></td>
+                        <td><strong>text bold. Used to emphasize a point</strong></td>
+                    </tr>  
+                    <tr>
+                        <td class="code">&lt;b&gt; … &lt;/b&gt;
+                        </td>
+                        <td></td>
+                        <td><b>Alternative to the above tag, also creates bold text.
+                        </b></td>
+                </tr> 
+                <tr>
+                        <td class="code">&lt;em&gt; … &lt;/em&gt;
+                        </td>
+                        <td></td>
+                        <td ><em>Another emphasis tag, but this displays text
+                            in italics.</em></td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;i&gt; … &lt;/i&gt;
+                        </td>
+                        <td></td>
+                        <td><i>Also used to display text in italics, but does not
+                            emphasize it like the above tag.
+                        </i></td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;strike&gt; … &lt;/strike&gt;
+                        </td>
+                        <td></td>
+                        <td>Another old tag, this is used to draw a line at
+                            the center of the text, so as to make it appear
+                            unimportant or no longer useful.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;cite&gt; … &lt;/cite&gt;
+                        </td>
+                        <td></td>
+                        <td>Tag for citing author of a quote.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;del&gt; … &lt;/del&gt;
+                        </td>
+                        <td></td>
+                        <td class="code">Pre-formatted, ‘monospace’ text laid out with
+                            whitespace inside the element intact.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;ins&gt; … &lt;/ins&gt;
+                        </td>
+                        <td></td>
+                        <td>Denotes text that has been inserted into
+                            the webpage.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;blockquote&gt; … &lt;/blockquote&gt;
+                        </td>
+                        <td></td>
+                        <td>Quotes often go into this tag. Is used in tandem with
+                            the &lt;cite>&gt; tag.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;q&gt; … &lt;/q&gt;
+                        </td>
+                        <td></td>
+                        <td>Similar to the above tag, but for shorter quotes.
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;abbr&gt; … &lt;/abbr&gt;
+                        </td>
+                        <td></td>
+                        <td>Denotes abbreviations, along with the full forms.
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;acronym&gt; … &lt;/acronym&gt;
+                        </td>
+                        <td></td>
+                        <td>Tag for acronyms. No HTML5 support.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;address&gt; … &lt;/address&gt;
+                        </td>
+                        <td></td>
+                        <td>Tag for specifying author’s contact details.
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;dfn&gt; … &lt;/dfn&gt;
+                        </td>
+                        <td></td>
+                        <td>Tag dedicated for definitions.
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td class="code">&lt;code&gt; … &lt;/code&gt;
+                        </td>
+                        <td></td>
+                        <td>This is used to display code snippets within
+                            a paragraph.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;sub&gt; … &lt;/sub&gt;
+                        </td>
+                        <td></td>
+                        <td>Used for writing a subscript (smaller font just
+                            below the mid-point of normal font). Example: a<sub>x</sub></td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;sup&gt; … &lt;/sup&gt;
+                        </td>
+                        <td></td>
+                        <td>Similar to the above tag, but for superscripting.
+                        Eg. s<sup>a</sup>   </td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;small&gt; … &lt;/small&gt;
+                        </td>
+                        <td></td>
+                        <td>Reduces text size. In HTML5, it often refers to
+                            redundant or invalid information.</td>
+                    </tr> 
+                </tbody>
+            </table>
+            <pre class="code">
+                &lt;p&gt;&lt;strong&gt;Bold text&lt;/strong&gt; Regular text
+                &lt;em&gt;some words in italics&lt;/em&gt; regular text
+                once again.&lt;/p&gt;
+
+                &lt;blockquote&gt;
+                Anyone who has never made a mistake has never
+                tried anything new.&lt;cite&gt;- Albert Einstein&lt;/cite&gt;
+                &lt;/blockquote&gt;
+                
+                &lt;pre&gt;
+                Some pre-formatted text
+                &lt;/pre&gt;
+                
+                &lt;p&gt;A code snippet: &lt;code&gt;some code&lt;/code&gt;&lt;/p&gt;
+            </pre>
+                
+        </div>
+<hr>
+<hr>
+        <div>
+            <H2 id="Links">Link Tags</H2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tags</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="code">&lt;a href=””&gt; … &lt;/a&gt;
+                        </td>
+                        <td></td>
+                        <td>Anchor tag. Primarily used for including
+                            hyperlinks</td>
+                    </tr>  
+                    <tr>
+                        <td class="code">&lt;a href=”mailto:”&gt; … &lt;/a&gt;
+                        </td>
+                        <td></td>
+                        <td>Tag dedicated to sending emails.</td>
+                </tr> 
+                <tr>
+                        <td class="code">&lt;a href=”tel://###-###”&gt; … &lt;/a&gt;
+                        </td>
+                        <td></td>
+                        <td>Anchor tag for mentioning contact numbers.
+                            As the numbers are clickable, this can be
+                            particularly beneficial for mobile users.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;a name=”name”&gt; … &lt;/a&gt;
+                        </td>
+                        <td></td>
+                        <td>This tag can be used to quickly navigate to
+                            a different part of the webpage.
+                            </td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;a href=”#name”&gt; … &lt;/a&gt;
+                        </td>
+                        <td></td>
+                        <td>A variation of the above tag, this is only meant
+                            to navigate to a div section of the webpage.
+                            </td>
+                    </tr>   
+                </tbody>
+            </table>
+              
+        </div>
+
+    <hr>
+    <hr>
+        <div id="images">
+        <H2>Image Tags</H2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;img /&gt;
+                    </td>
+                    <td></td>
+                    <td>A tag to display images in the webpage.</td>
+                </tr>  
+                <tr>
+                    <td class="code">src=”url”
+                    </td>
+                    <td></td>
+                    <td>The URL or path where the image is located on
+                        your drive or on the web.</td>
+            </tr> 
+            <tr>
+                    <td class="code">alt=”text”
+                    </td>
+                    <td></td>
+                    <td class="code">The text written here is displayed when user
+                        hovers mouse over the image. Can be used to
+                        give additional details of the image.</td>
+                </tr> 
+                <tr>
+                    <td class="code">height=””
+                    </td>
+                    <td></td>
+                    <td>Specifies image height in pixels or percentages.</td>
+                </tr> 
+                <tr>
+                    <td class="code">width=””
+                    </td>
+                    <td></td>
+                    <td>Specifies image width in pixels or percentages</td>
+                </tr>   
+                <tr>
+                    <td class="code">align=””
+                    </td>
+                    <td></td>
+                    <td>The relative alignment of the image. Can change
+                        with changes to other elements in the webpage.
+                        </td>
+                </tr>  
+                <tr>
+                    <td class="code">border=””
+                    </td>
+                    <td></td>
+                    <td>Specifies border thickness of the image. If not
+                        mentioned, defaults to 0.</td>
+            </tr> 
+            <tr>
+                    <td class="code">&lt;map&gt; … &lt;/map&gt;
+                    </td>
+                    <td></td>
+                    <td>Denotes an interactive (clickable) image.</td>
+                </tr> 
+                <tr>
+                    <td class="code">&lt;map name=””&gt; … &lt;/map&gt;
+                    </td>
+                    <td></td>
+                    <td>Name of the map associated between the image
+                        and the map.</td>
+                </tr> 
+                <tr>
+                    <td class="code">&lt;area /&gt;
+                    </td>
+                    <td></td>
+                    <td>Specifies image map area.</td>
+                </tr> 
+                <tr>
+                    <td class="code">shape=””
+                    </td>
+                    <td></td>
+                    <td>Shape of the area.</td>
+                </tr> 
+                <tr>
+                    <td class="code">coords=””
+                    </td>
+                    <td></td>
+                    <td>Coordinates of the vital information of the shape.
+                        Example: vertices for rectangles, center/radius
+                        for circles.</td>
+                </tr> 
+                
+                </tbody>
+            </table>
+            <pre class="code">
+                &lt;img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap"&gt;
+                &lt;map name="planetmap"&gt;
+                    &lt;area shape="rect" coords="0,0,60,100"
+                    href="sun.htm" alt="Sun"&gt;
+                    &lt;area shape="circle" coords="90,58,3"
+                    href="mercur.htm" alt="Mercury"&gt;
+                    &lt;area shape="circle" coords="124,58,8"
+                    href="venus.htm" alt="Venus"&gt;
+                &lt;/map&gt;
+            </pre>
+        </div>
+    <hr>
+    <hr>
+        <div    id="list">
+        <H2>List tags</H2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;ol&gt; … &lt;/ol&gt;
+                    </td>
+                    <td></td>
+                    <td>Tag for ordered or numbered list of items.</td>
+                </tr>  
+                <tr>
+                    <td class="code">&lt;ul&gt; … &lt;/ul&gt;
+                    </td>
+                    <td></td>
+                    <td>Contrary to the above tag, used for unordered
+                        list of items.</td>
+            </tr> 
+            <tr>
+                    <td class="code">&lt;li&gt; … &lt;/li&gt;
+                    </td>
+                    <td></td>
+                    <td>Individual item as part of a list.</td>
+                </tr> 
+                <tr>
+                    <td class="code">&lt;dl&gt; … &lt;/dl&gt;
+                    </td>
+                    <td></td>
+                    <td>Tag for list of items with definitions.</td>
+                </tr> 
+                <tr>
+                    <td class="code">&lt;dt&gt; … &lt;/dt&gt;
+                    </td>
+                    <td></td>
+                    <td>The definition of a single term inline with
+                        body content.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;dd&gt; … &lt;/dd&gt;</td>
+                    <td></td>
+                    <td>The description for the defined term.</td>
+                </tr>    
+            </tbody>
+        </table>
+</div>
+<hr>
+    <hr>
+    <div    id="forms">
+        <H2>Form tags</H2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;form&gt; … &lt;/form&gt;
+                    </td>
+                    <td></td>
+                    <td>The parent tag for an HTML form.
+                    </td>
+                </tr>  
+                <tr>
+                    <td class="code">action=”url”
+                    </td>
+                    <td></td>
+                    <td>The URL listed here is where the form data
+                        will be submitted once user fills it.</td>
+            </tr> 
+            <tr>
+                    <td class="code">method=””
+                    </td>
+                    <td></td>
+                    <td>It specifies which HTTP method (POST or GET)
+                        would be used to submit the form.   </td>
+                </tr> 
+                <tr>
+                    <td class="code">enctype=””
+                    </td>
+                    <td></td>
+                    <td>Only for POST method, this dictates the data
+                        encoding scheme to be used when form
+                        is submitted.</td>
+                </tr> 
+                <tr>
+                    <td class="code">autocomplete
+                    </td>
+                    <td></td>
+                    <td>Determines if the form has auto-complete enabled.
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="code">novalidate
+                    </td>
+                    <td></td>
+                    <td>Determines whether the form should be validated
+                        before submission.
+                        
+                    </td>
+                </tr>   
+                <tr>
+                    <td class="code">accept-charsets
+                    </td>
+                    <td></td>
+                    <td>Determines character encodings when form
+                        is submitted.
+                        </td>
+                </tr>
+                <tr>
+                    <td class="code">target
+                    </td>
+                    <td></td>
+                    <td>After submission, the form response is displayed
+                        wherever this refers to, usually has the following
+                        values: _blank, _self, _parent, _top
+                        </td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;fieldset&gt; … &lt;/fieldset&gt;
+                    </td>
+                    <td></td>
+                    <td>Identifies the group of all fields on the form.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;label&gt; … &lt;/label&gt;
+                    </td>
+                    <td></td>
+                    <td>This is used to label a field in the form.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;legend&gt; … &lt;/legend&gt;
+
+                    </td>
+                    <td></td>
+                    <td>This operates as a caption for the &lt;fieldset&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;input /&gt;
+
+                    </td>
+                    <td></td>
+                    <td>This tag is used to take input from the user.
+                        Input type is determined by a number of attributes. 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+<hr>
+    <hr>
+    <div    id="iattributes">
+        <H2 class="attributes">Input Attributes</H2>
+
+        <table class="attributetable">
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="code">
+                    <td>type=””</td>
+                    <td></td>
+                    <td>Determines which type of input (text, dates,
+                        password) is requested from the user.</td>
+                </tr>  
+                <tr class="code">
+                    <td>name=””</td>
+                    <td></td>
+                    <td>Specifies the name of the input field.</td>
+                </tr> 
+                <tr class="code">
+                    <td>value=””</td>
+                    <td></td>
+                    <td>Specifies the value contained currently in
+                        the input field.</td>
+                </tr > 
+                <tr class="code">
+                    <td>size=””</td>
+                    <td></td>
+                    <td>Determines the input element width
+                        (number of characters).</td>
+                </tr> 
+                <tr class="code">
+                    <td>maxlength=””</td>
+                    <td></td>
+                    <td>Specifies the most input field characters allowed.
+                        required</td>
+                </tr>
+                <tr class="code">
+                        <td>required</td>
+                        <td></td>
+                        <td>Makes an input field compulsory to be filled by
+                            the user. The form cannot be submitted if a required
+                            field is left empty.</td>
+                </tr>  
+                <tr class="code">
+                    <td>width=””</td>
+                    <td></td>
+                    <td>Determines the width of the input element,
+                        in pixel values.</td>
+                </tr> 
+                <tr class="code">
+                    <td>height=””</td>
+                    <td></td>
+                    <td>Determines the height of the input element,
+                        in pixel values.</td>
+                </tr> 
+                <tr>
+                    <td>placeholder=””</td>
+                    <td></td>
+                    <td>Can be used to give hints to the user about the nature
+                        of the requested data.</td>
+                </tr> 
+                <tr class="code">
+                    <td>pattern=””</td>
+                    <td></td>
+                    <td>Specifies a regular expression, which can be used to
+                        look for patterns in the user’s text.</td>
+                <tr class="code">
+                    <td>min=””</td>
+                    <td></td>
+                    <td>The minimum value allowed for an &lt;input&gt; element.</td>
+                </tr>  
+                <tr class="code">
+                    <td>max=””</td>
+                    <td></td>
+                    <td>The maximum value allowed for an &lt;input&gt; element.</td>
+                </tr> 
+                <tr class="code">
+                    <td>autofocus</td>
+                    <td></td>
+                    <td>Forces focus on the input element when webpage</td>
+                </tr> 
+                <tr>
+                    <td>disabled</td>
+                    <td></td>
+                    <td>Disables the input element. User can no longer enter data.</td>
+                </tr> 
+                <tr class="code">
+                    <td>&lt;textarea&gt; … &lt;/textarea&gt;</td>
+                    <td></td>
+                    <td>For longer strings of input. Can be used to get
+                        multi-sentence text from the user.</td>
+                </tr>   
+                <tr class="code">
+                    <td>&lt;select&gt; … &lt;/select&gt;</td>
+                    <td></td>
+                    <td>This tag specifies a list of options which the user
+                        can choose from.</td>
+                </tr>   
+            </tbody>
+        </table>
+    </div>
+<hr>
+    <hr>
+    <div    id="sattribute">
+        <H2 class="attributes">Select Attributes</H2>
+
+        <table class="attributetable">
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">name=””</td>
+                    <td></td>
+                    <td>The name of a particular list of options.</td>
+                </tr>  
+                <tr>
+                    <td class="code">size=””</td>
+                    <td></td>
+                    <td>Total number of options given to the user.</td>
+            </tr> 
+            <tr>
+                    <td class="code">multiple</td>
+                    <td></td>
+                    <td>States whether the user can choose multiple
+                        options from the list.</td>
+                </tr> 
+                <tr>
+                    <td class="code">required</td>
+                    <td></td>
+                    <td>Specifies whether choosing an option/s is
+                        necessary for form submission.</td>
+                </tr> 
+                <tr>
+                    <td class="code">autofocus</td>
+                    <td></td>
+                    <td>Specifies that a drop-down list automatically
+                        comes into focus after a page loads.</td>
+                </tr>   
+                <tr>
+                    <td class="code">&lt;option&gt; … &lt;/option&gt;</td>
+                    <td></td>
+                    <td>Tag for listing individual items in the list
+                        of options.</td>
+                </tr> 
+
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <hr>
+    <div    id="oattribute">
+        <H2 class="attributes">Option Attributes</H2>
+
+        <table  class="attributetable">
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">value=””</td>
+                    <td></td>
+                    <td>The text visible to the user for any given option.</td>
+                </tr>  
+                <tr>
+                    <td class="code">selected</td>
+                    <td></td>
+                    <td>Determines which option is selected by default
+                        when the form loads.</td>
+                </tr> 
+                <tr>
+                    <td class="code">&lt;button&gt; … &lt;/button&gt;</td>
+                    <td></td>
+                    <td>Tag for creating a button for form submission.</td>
+                </tr> 
+            
+            </tbody>
+        </table>
+    </div>
+<hr>
+<hr>
+
+
+        <div id="tabletag">
+            <h2>TABLE TAGS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tags</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  class="code">&lt;table&gt;<br>&lt;/table&gt;</td>
+                        <td>Table</td>
+                        <td>The wrapper element for all HTML tables.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;thead&gt;<br>&lt;/thead&gt;</td>
+                    <td>Table Head	</td>
+                    <td>The set of rows defining the column headers in a table.</td>
+                </tr> 
+                <tr>
+                        <td class="code">&lt;tbody&gt;<br>&lt;/tbody&gt;</td>
+                        <td>Table Body	</td>
+                        <td>The set of rows containing actual table data.</td>
+                        </tr> 
+                        <tr>
+                        <td class="code">&lt;tr&gt;<br>&lt;/tr&gt;</td>
+                        <td>Table Row	</td>
+                        <td>The table row container.</td>
+                    </tr> 
+                    <tr>
+                        <td class="code">&lt;td&gt;<br>&lt;/td&gt;</td>
+                        <td>Table Data	</td>
+                        <td>The table row container.</td>
+                        </tr> 
+
+                        <tr>
+                            <td class="code">&lt;tfoot&gt; <br> &lt;/tfoot&gt;</td>
+                        <td>Table Foot	</td>
+                        <td>The set of rows defining the footer in a table.</td>
+                        </tr> 
+                    </tbody>
+                </table>
+            <pre class="code">
+                &lt;table&gt;
+                    &lt;colgroup&gt;
+                        &lt;col span="2"&gt;
+                        &lt;col&gt;
+                    &lt;/colgroup&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Name&lt;/th&gt;
+                        &lt;th&gt;Major&lt;/th&gt;
+                        &lt;th&gt;GPA&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Bob&lt;/td&gt;
+                        &lt;td&gt;Law&lt;/td&gt;
+                        &lt;td&gt;3.55&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Alice&lt;/td&gt;
+                        &lt;td&gt;Medicine&lt;/td&gt;
+                        &lt;td&gt;3.61&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            </pre>
+        </div>
+    <hr>
+    <hr>
+    
+    
+    
+    <div    CSS CHEAT SHEET>
+    
+    
+    
+        <H2>Table attributes</H2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tags</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code"></td>
+                    <td></td>
+                    <td></td>
+                </tr>  
+                <tr>
+                    <td class="code"></td>
+                    <td></td>
+                    <td></td>
+            </tr> 
+            <tr>
+                    <td class="code"></td>
+                    <td></td>
+                    <td></td>
+                </tr> 
+                <tr>
+                    <td class="code"></td>
+                    <td></td>
+                    <td></td>
+                </tr> 
+                <tr>
+                    <td class="code"></td>
+                    <td></td>
+                    <td></td>
+                </tr>   
+            </tbody>
+        </table>
+    </div>
+    </body>

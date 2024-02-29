@@ -1,0 +1,125 @@
+html{
+    background-color: black;
+}
+
+#inb{
+    position: sticky;
+    width: 40px;
+    height: 30px; 
+    left: 0;
+    top: 0;
+    float: right;
+    z-index: 10;
+    background-color: rgb(255, 40, 40);
+    color: black;
+    border: 1px;
+    border-style: dashed;
+    text-align: center;
+    padding top: 15px 
+    
+    
+}
+header{
+    
+    background-color: blueviolet;
+    color: rgb(153, 13, 8);
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png);
+    margin: 0px;
+    padding-top: 5px;
+    height: 75px;
+
+    
+}
+nav{ 
+    line-height: 1.3em;
+    font-size: 18px;
+    width: 50%;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/12/29/32/1000_F_312293225_DcDcKQKi8AyPSKqQmc8POAQLYwe6xrv0.jpg);
+    
+}    
+li{
+    display: block;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    width: 100%;
+    color: rgb(0, 0, 255);
+    background-color: rgba(248, 245, 43, 0.705);
+    text-align: center;
+}
+
+
+body{
+    background-image: url(https://t4.ftcdn.net/jpg/04/04/40/49/240_F_404404954_WGYZtTwswIrXnJl6qVeEFK5UWPFflVB8.jpg);
+    height: 100%;
+    width: 80%;
+    background-color: rgb(165, 255, 195);
+    margin-right: 50px;
+    margin left: 50px;
+    padding: 100px;
+}
+tr th{
+    margin: 20em;
+    padding: 10px;
+    border: 2px;
+    border-style: double;
+    background-color: rgba(0, 0, 255, 0.322);
+    color: white;
+}
+tr td{
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+    color: rgba(208, 255, 0, 0.808);
+}
+pre code{
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+pre{
+    color: white;
+    background-color: black;
+    line-height: 1.3em;
+    font-size: larger;
+}
+span{
+    font-weight: bold;
+    line-height: 2em;
+}
+div{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.code   {
+    font-family: monospace;
+    font-size: 15px;
+}
+th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.attributes {
+    background-color: aqua;
+    color: blueviolet;
+}
+
+table.attributetable{
+    border-color: rgb(202, 169, 233);
+    border-width: 4px;
+    color: aqua;
+    border-style: solid;
+}
